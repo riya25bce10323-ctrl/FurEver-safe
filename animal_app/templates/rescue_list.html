@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Rescue List</title>
+</head>
+<body>
+    <h2>Rescue Requests 📋</h2>
+
+    {% if rescues %}
+        <ul>
+        {% for rescue in rescues %}
+            <li>
+                <strong>{{ rescue.animal }}</strong>  
+                — Location: {{ rescue.location }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No rescue requests yet 🐾</p>
+    {% endif %}
+
+    <br>
+    <a href="/rescue">➕ Report Another Rescue</a>
+    <br>
+    <a href="/">🏠 Home</a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adoption List | FurEver Safe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="home-container">
+    <h2>Animals Available for Adoption 🐾</h2>
+
+    {% if adoptions %}
+        {% for pet in adoptions %}
+            <div class="card">
+                <h3>🐶 {{ pet.name }}</h3>
+                <p>Age: {{ pet.age }} years</p>
+                <p>Location: {{ pet.location }}</p>
+            </div>
+            <br>
+        {% endfor %}
+    {% else %}
+        <p>No animals available yet 💔</p>
+    {% endif %}
+
+    <br>
+    <a href="/adoption">➕ Add Another</a> |
+    <a href="/">🏠 Home</a>
+</div>
+
+</body>
+</html>

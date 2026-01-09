@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adoption | FurEver Safe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="home-container">
+    <h2>Put Animal for Adoption 🏠</h2>
+
+    <div class="card">
+        <form action="/adoption-submit" method="POST">
+
+            <input type="text" name="name" placeholder="Animal Name" required>
+            <br><br>
+
+            <input type="number" name="age" placeholder="Age (years)" required>
+            <br><br>
+
+            <input type="text" name="location" placeholder="Location" required>
+            <br><br>
+
+            <button class="main-btn">Add for Adoption</button>
+        </form>
+    </div>
+
+    <br>
+    <a href="/">🏠 Home</a>
+</div>
+
+</body>
+</html>

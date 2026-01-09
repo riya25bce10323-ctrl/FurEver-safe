@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FurEver Safe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="page">
+
+        <h1 class="title">FurEver Safe 🐾</h1>
+        <p class="subtitle">
+            Because every animal deserves to be safe, forever.
+        </p>
+
+        <div class="card">
+
+            <a href="/rescue">
+                <button class="btn primary">🐶 Report Rescue</button>
+            </a>
+
+            <a href="/rescue-list">
+                <button class="btn secondary">📋 View Rescue List</button>
+            </a>
+
+            <a href="/adoption">
+                <button class="btn primary">🏠 Adoption</button>
+            </a>
+
+            <a href="/adoption-list">
+                <button class="btn secondary">🐾 View Adoption List</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
