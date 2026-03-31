@@ -57,13 +57,7 @@ Copy code
 Bash
 pip install flask
 Run the application
-Copy code
-Bash
 python app.py
-Open your browser and go to:
-Copy code
-
-http://127.0.0.1:5000/
 📱 Mobile Responsiveness
 The application is fully responsive and adapts smoothly to:
 Mobile phones
